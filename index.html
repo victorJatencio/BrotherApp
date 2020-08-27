@@ -214,13 +214,13 @@
 
           const nav = document.querySelector(".side-nav");
 
-          if (localStorage.getItem(lsKey) === "true") {
-            nav.classList.add(collapsedClass);
-          }
+          // if (localStorage.getItem(lsKey) === "true") {
+          //   nav.classList.add(collapsedClass);
+          // }
 
           nav.addEventListener("click", () => {
             nav.classList.toggle(collapsedClass);
-            localStorage.setItem(lsKey, nav.classList.contains(collapsedClass));
+            // localStorage.setItem(lsKey, nav.classList.contains(collapsedClass));
           })
       }
     </script>
