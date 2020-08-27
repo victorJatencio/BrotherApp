@@ -21,7 +21,13 @@
 
       <header>
         <nav class="side-nav">
-          <ul>
+          <a href="#" class="nav__link">
+            <div class="nav__icon-container">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <span class="nav__label">Close Menu</span>
+          </a>
+          <ul class="nav__content">
             <li><a href="#">Xpress Assessment</a></li>
             <li><a href="#">ABC Test Corp - AT A GLANCE INFOGRAPHIC</a></li>
             <li><a href="#">ABC Test Corp - FLEET DETAILS</a></li>
@@ -43,11 +49,7 @@
               <a>Environment, Energy and Resources</a>
             </li>
           </ul>
-          <div class="download">
-            <button class="btn primary-color">Download PDF<span><i
-                  class="fas
-                  fa-file-pdf"></i></span></button>
-          </div>
+
         </nav>
       </header>
 
@@ -204,5 +206,23 @@
     <!-- My Script -->
     <script src="js/switch.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      // Navigation
+      {
+          const collapsedClass = "nav--collapse";
+          const lsKey = "navCollapsed";
+
+          const nav = document.querySelector(".side-nav");
+
+          if (localStorage.getItem(lsKey) === "true") {
+            nav.classList.add(collapsedClass);
+          }
+
+          nav.addEventListener("click", () => {
+            nav.classList.toggle(collapsedClass);
+            localStorage.setItem(lsKey, nav.classList.contains(collapsedClass));
+          })
+      }
+    </script>
   </body>
 </html>

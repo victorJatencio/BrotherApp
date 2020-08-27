@@ -121,6 +121,27 @@ p.footer-note {
   color: #3a3939;
 }
 
+.nav__link {
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+}
+.nav__icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+.nav__label {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
 /**/
 .wrapper {
   display: flex;
@@ -132,24 +153,37 @@ p.footer-note {
 }
 
 .wrapper header nav.side-nav {
-  padding: 2em;
-  max-width: 180px;
+  padding: 2em 1em;
+  width: 180px;
   /* display: none; */
-  position: fixed;
+  position: relative;
   background: #f3f6f8;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   height: 100%;
   z-index: 999;
+  transition: width 0.2s;
+  flex-shrink: 0;
+}
+
+.nav--collapse {
+  width: 40px !important;
+}
+.nav--collapse .nav__label {
+  display: none;
+}
+.nav--collapse .nav__content {
+  display: none;
 }
 
 .main-wrapper {
   padding: 0 3em;
   /* background-color: #dbdbdb; */
-  max-width: 980px;
+  width: 100%;
   position: relative;
-  margin-left: auto;
+  margin: auto;
   height: 100vh;
+  /* overflow-y: auto; */
 }
 
 .main-wrapper .section {
