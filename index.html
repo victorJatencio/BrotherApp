@@ -1,228 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brother App</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/OutsystemUI.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
+    <link
+      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-
     <div class="wrapper">
-
-      <header>
-        <nav class="side-nav">
-          <a href="#" class="nav__link">
-            <div class="nav__icon-container">
-              <i class="fas fa-ellipsis-h"></i>
-            </div>
-            <span class="nav__label">Close Menu</span>
-          </a>
-          <ul class="nav__content">
-            <li><a href="#">Xpress Assessment</a></li>
-            <li><a href="#">ABC Test Corp - AT A GLANCE INFOGRAPHIC</a></li>
-            <li><a href="#">ABC Test Corp - FLEET DETAILS</a></li>
-
-            <li class="nav-item locked">
-              <span><i class="fas fa-lock"></i></span>
-              <a>What is a Predictive Assessment?</a>
-            </li>
-            <li class="nav-item locked">
-              <span><i class="fas fa-lock"></i></span>
-              <a>Current Environment at a Glance</a>
-            </li>
-            <li class="nav-item locked">
-              <span><i class="fas fa-lock"></i></span>
-              <a>Current Operating Environment</a>
-            </li>
-            <li class="nav-item locked">
-              <span><i class="fas fa-lock"></i></span>
-              <a>Environment, Energy and Resources</a>
-            </li>
-          </ul>
-
-        </nav>
-      </header>
-
-      <main class="main-wrapper">
-
-        <!-- Section Start -->
-        <div class="section padding-helper">
-          <div class="content col-2">
-            <div class="content-left">
-              <img class="rsd-logo" src="image/rds.png" alt="RSD">
-              <h1 class="intro-title"><span>Imaging</span> <span>Environment</span>
-                <span>Predictive</span>
-                <span class="blue-hightlight">Assessment</spanImaging></h1>
+      <div class="row tablet-break-none phone-break-none">
+        <div class="navigation">
+          <div class="nav-items-wrapper">
+            <div class="nav-options">
+              <span
+                ><img src="./image/Header-Logo.svg" alt="Client Logo"
+              /></span>
+              <a href="#"><i class="fas fa-thumbtack"></i></a>
             </div>
 
-            <div class="content-right">
-              <img class="intro-image" src="image/FrontPageImage.png"
-                alt="FrontPageImage">
-            </div>
-          </div>
-        </div>
-        <!-- End Section -->
-        <!-- Section Start -->
-        <div class="section padding-helper">
-          <div class="content col-2">
-            <div class="section-title">
-              <h1 class="intro-title">At a glance<span
-                  class="blue-hightlight">Infographic</span></h1>
-            </div>
-
-            <div>
-              <img class="intro-image" src="image/FrontPageImage.png"
-                alt="FrontPageImage">
+            <div class="side-links">
+              <ul>
+                <li class="nav-item active">
+                  <a class="nav-link scroll" href="#xpressassessment"
+                    >Xpress Assessment</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#ataglance">At A Glance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#fleetdetails"
+                    >Fleet Details</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#apendix"
+                    >List of All Existing Devices</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="restricted">
+                    <i class="fas fa-lock"></i>
+                    <span>What is a Predictive Assessment</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="restricted"
+                    ><i class="fas fa-lock"></i>
+                    <span> Current Environment at a Glance </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="restricted">
+                    <i class="fas fa-lock"></i>
+                    <span>Current Operating Environment</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="restricted">
+                    <i class="fas fa-lock"></i>
+                    <span>Environment, Energy and Resources</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- End Section -->
-        <!-- Section Start -->
-        <div class="section padding-helper">
-          <div class="content">
-            <div class="row">
-              <div class="slideIn">
-                <h3>ABC Test Corp: <span class="blue-hightlight">Fleet Details</span></h3>
-              </div>
-            </div>
-            <div class="row col-2">
-              <div style="flex:1;">
-                <!-- Table 01 -->
-                <table class="table table-light slideIn">
-                  <thead class="bg-primary">
-                    <tr>
-                      <th scope="col">Age Range</th>
-                      <th scope="col"># of Devices</th>
-                      <th scope="col">% of Total</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Less than 1 year</td>
-                      <td>0</td>
-                      <td>0.0%</td>
-                    </tr>
-                    <tr>
-                      <td>1 - 2 years</td>
-                      <td>143</td>
-                      <td>28.1%</td>
-                    </tr>
-                    <tr>
-                      <td>3 - 4 years</td>
-                      <td>4</td>
-                      <td>0.8%</td>
-                    </tr>
-                    <tr>
-                      <td>Greater than 5 years</td>
-                      <td>361</td>
-                      <td>71.1%</td>
-                    </tr>
-                    <tr class="bg-primary">
-                      <td>Total</td>
-                      <td>508</td>
-                      <td>100%</td>
-                    </tr>
-                    <tr>
-                      <td>Average Age:</td>
-                      <td>6.3 years</td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
 
-                <!-- foot note -->
-                <div>
-                  <div class="small-col slideIn">
-                    <p class="footer-note">71.1% of the devices in the sample
-                      set
-                      are
-                      considered to be
-                      past the end of their useful life (5+ years), and the
-                      average age of your fleet is 6.3 years. As devices age
-                      failure
-                      rates typically increase and it becomes more expensive to
-                      maintain the fleet, as parts become discontinued and
-                      availability diminishes. In addition, older technology
-                      lacks
-                      the
-                      features many modern office environments are requiring for
-                      wireless, cloud, and mobility initiatives, and are more
-                      prone
-                      to security breaches.</p>
+        <!-- End of Nav -->
+
+        <div class="burger-menu">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+
+        <div class="pg-content">
+          <div id="xpressassessment" class="section">
+            <div class="client-logo">
+              <img src="image/Header-Logo.svg" alt="Client Logo" />
+            </div>
+            <h1>
+              Xpress<br />
+              <span>Assessment</span>
+            </h1>
+          </div>
+          <div id="ataglance" class="section">
+            <div class="sectio-header">
+              <div class="name-highlight">AutoNation</div>
+              <div class="section-title">At a glance</div>
+            </div>
+            <div class="temp-placeholder" style="margin-top: 48px">
+              <img src="/image/infographic_01.png" alt="infographic" />
+            </div>
+            <div class="temp-placeholder">
+              <img src="/image/infographic_02.png" alt="infographic" />
+            </div>
+          </div>
+          <div id="fleetdetails" class="section">
+            <div class="sectio-header">
+              <div class="name-highlight">AutoNation</div>
+              <div class="section-title">Fleet Details</div>
+            </div>
+
+            <div class="section-content">
+              <div
+                class="columns columns-medium-left gutter-base tablet-break-none phone-break-none"
+              >
+                <div class="columns-item">
+                  <div class="figure">
+                    <img src="/image/device@2x.png" alt="device" />
                   </div>
                 </div>
-                <!-- End foot note -->
+                <div class="columns-item">
+                  <div class="table-data">
+                    <h5 class="table-title">Fleet Analysis</h5>
+                    <table class="table">
+                      <thead>
+                        <tr class="table-header">
+                          <th>Type</th>
+                          <th>Manufacturer</th>
+                          <th>Models</th>
+                          <th>Devices</th>
+                          <th>Supply SKUs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-row">
+                          <td>
+                            <span>MFD</span>
+                          </td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>AIO</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Printer</span>
+                          </td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Other</span>
+                          </td>
+                          <td>
+                            <span>0</span>
+                          </td>
+                          <td>
+                            <span>0</span>
+                          </td>
+                          <td>
+                            <span>0</span>
+                          </td>
+                          <td>
+                            <span>0</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Total</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>50</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <div class="chart-content slideIn">
-                <img src="image/chart.png" alt="Chart">
+            </div>
+            <div class="section-content">
+              <div
+                class="columns columns-medium-left gutter-base tablet-break-none phone-break-none"
+              >
+                <div class="columns-item">
+                  <div class="figure">
+                    <img src="/image/paper@2x.png" alt="device" />
+                  </div>
+                </div>
+                <div class="columns-item">
+                  <div class="table-data">
+                    <h5 class="table-title">Monthly Volume</h5>
+                    <table class="table">
+                      <thead>
+                        <tr class="table-header">
+                          <th>Type</th>
+                          <th>Mono Volume</th>
+                          <th>Mono CPP</th>
+                          <th>Color Volume</th>
+                          <th>Color CPP</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-row">
+                          <td>
+                            <span>MFD</span>
+                          </td>
+                          <td>
+                            <span>0</span>
+                          </td>
+                          <td>
+                            <span>$0.000000</span>
+                          </td>
+                          <td>
+                            <span>0</span>
+                          </td>
+                          <td>
+                            <span>$0.000000</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>AIO</span>
+                          </td>
+                          <td>
+                            <span>6,115</span>
+                          </td>
+                          <td>
+                            <span>$0.032373</span>
+                          </td>
+                          <td>
+                            <span>296</span>
+                          </td>
+                          <td>
+                            <span>$0.116441</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Printer</span>
+                          </td>
+                          <td>
+                            <span>19,209</span>
+                          </td>
+                          <td>
+                            <span>$0.017202</span>
+                          </td>
+                          <td>
+                            <span>1,125</span>
+                          </td>
+                          <td>
+                            <span>$0.102379</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Other</span>
+                          </td>
+                          <td>
+                            <span>0</span>
+                          </td>
+                          <td>
+                            <span>$0.000000</span>
+                          </td>
+                          <td>
+                            <span>0</span>
+                          </td>
+                          <td>
+                            <span>$0.000000</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Total</span>
+                          </td>
+                          <td>
+                            <span>25,324</span>
+                          </td>
+                          <td>
+                            <span>$0.021013</span>
+                          </td>
+                          <td>
+                            <span>1,421</span>
+                          </td>
+                          <td>
+                            <span>$0.105308</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-content">
+              <div
+                class="columns columns-medium-left gutter-base tablet-break-none phone-break-none"
+              >
+                <div class="columns-item">
+                  <div class="figure">
+                    <img src="/image/cost@2x.png" alt="device" />
+                  </div>
+                </div>
+                <div class="columns-item">
+                  <div class="table-data">
+                    <h5 class="table-title">Monthly TCO</h5>
+                    <table class="table">
+                      <thead>
+                        <tr class="table-header">
+                          <th>Type</th>
+                          <th>Hardware</th>
+                          <th>Maintenance Supplies</th>
+                          <th>Paper</th>
+                          <th>Energy</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-row">
+                          <td>
+                            <span>MFD</span>
+                          </td>
+                          <td>
+                            <span>$4</span>
+                          </td>
+                          <td>
+                            <span>$0</span>
+                          </td>
+                          <td>
+                            <span>$0</span>
+                          </td>
+                          <td>
+                            <span>$2</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>AIO</span>
+                          </td>
+                          <td>
+                            <span>$52</span>
+                          </td>
+                          <td>
+                            <span>$181</span>
+                          </td>
+                          <td>
+                            <span>$32</span>
+                          </td>
+                          <td>
+                            <span>$21</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Printer</span>
+                          </td>
+                          <td>
+                            <span>$150</span>
+                          </td>
+                          <td>
+                            <span>$296</span>
+                          </td>
+                          <td>
+                            <span>$102</span>
+                          </td>
+                          <td>
+                            <span>$10</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Other</span>
+                          </td>
+                          <td>
+                            <span>$0</span>
+                          </td>
+                          <td>
+                            <span>$0</span>
+                          </td>
+                          <td>
+                            <span>$0</span>
+                          </td>
+                          <td>
+                            <span>$0</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Total</span>
+                          </td>
+                          <td>
+                            <span>$205</span>
+                          </td>
+                          <td>
+                            <span>$477</span>
+                          </td>
+                          <td>
+                            <span>$134</span>
+                          </td>
+                          <td>
+                            <span>$33</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-content">
+              <div
+                class="columns columns-medium-left gutter-base tablet-break-none phone-break-none"
+              >
+                <div class="columns-item">
+                  <div class="figure">
+                    <img src="/image/co2@2x.png" alt="device" />
+                  </div>
+                </div>
+                <div class="columns-item">
+                  <div class="table-data">
+                    <h5 class="table-title">
+                      Monthly CO<span style="font-size: 12px">2</span>
+                    </h5>
+                    <table class="table">
+                      <thead>
+                        <tr class="table-header">
+                          <th>Type</th>
+                          <th>Energy</th>
+                          <th>Paper</th>
+                          <th>Supplies</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-row">
+                          <td>
+                            <span>MFD</span>
+                          </td>
+                          <td>
+                            <span>33.1 lb</span>
+                          </td>
+                          <td>
+                            <span>0.0 lb</span>
+                          </td>
+                          <td>
+                            <span>0.0 lb</span>
+                          </td>
+                          <td>
+                            <span>33.1 lb</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>AIO</span>
+                          </td>
+                          <td>
+                            <span>317.9 lb</span>
+                          </td>
+                          <td>
+                            <span>63.7 lb</span>
+                          </td>
+                          <td>
+                            <span>27.8 lb</span>
+                          </td>
+                          <td>
+                            <span>409.4 lb</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Printer</span>
+                          </td>
+                          <td>
+                            <span>157.8 lb</span>
+                          </td>
+                          <td>
+                            <span>202.1 lb</span>
+                          </td>
+                          <td>
+                            <span>12.1 lb</span>
+                          </td>
+                          <td>
+                            <span>372.0 lb</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Other</span>
+                          </td>
+                          <td>
+                            <span>0.0 lb</span>
+                          </td>
+                          <td>
+                            <span>0.0 lb</span>
+                          </td>
+                          <td>
+                            <span>0.0 lb</span>
+                          </td>
+                          <td>
+                            <span>0.0 lb</span>
+                          </td>
+                        </tr>
+                        <tr class="table-row">
+                          <td>
+                            <span>Total</span>
+                          </td>
+                          <td>
+                            <span>508.8 lb</span>
+                          </td>
+                          <td>
+                            <span>265.8 lb</span>
+                          </td>
+                          <td>
+                            <span>39.9 lb</span>
+                          </td>
+                          <td>
+                            <span>814.5 lb</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- End Section -->
-
-        <!-- Start Footer -->
-        <div class="footer">
-          <div class="footer-wrapper">
-            <div class="footer-left">
-              <img src="image/Brother.png" alt="Brother">
+          <div id="apendix" class="section">
+            <div class="sectio-header">
+              <div class="name-highlight">AutoNation</div>
+              <div class="section-title">List of All Existing Devices</div>
             </div>
-            <!-- Navigation -->
-            <div class="easy-nav">
-              <div class="prev"><button onclick="showPrev()"><i class="fas
-                    fa-chevron-left"></i></button></div>
-              <div class="page-number">1/20</div>
-              <div class="next"><button onclick="showNext()"><i class="fas
-                    fa-chevron-right"></i></button></div>
-            </div>
-            <div class="footer-right">
-              <p>Prepared for AutoNation</p>
+            <div class="temp-placeholder">
+              <img src="/image/last_screen.png" alt="infographic" />
             </div>
           </div>
-        </div>
-        <!-- End Footer -->
-        <!-- Slide Layer -->
-        <div id="slideLayer"></div>
-      </main>
 
-    </div><!-- End wrapper -->
+          <footer class="footer">
+            <div
+              class="columns columns2 gutter-base tablet-break-none phone-break-none"
+            >
+              <div class="columns-item">
+                <div class="papared-with-content">
+                  <div class="brand">
+                    <img src="/image/Brother.png" alt="Brother" />
+                  </div>
+                  +
+                  <div class="brand">
+                    <img src="/image/rds.png" alt="RSD" />
+                  </div>
+                </div>
+              </div>
+              <div class="columns-item">
+                <div class="papared-for-content">
+                  <span>Prepared For</span>
+                  <div class="papared-name">
+                    <img src="./image/Header-Logo.svg" alt="Client Logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery 3.5.1.min.js"></script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/CSSRulePlugin.min.js"></script>
     <!-- My Script -->
-    <script src="js/switch.js"></script>
     <script src="js/script.js"></script>
-    <script>
-      // Navigation
-      {
-          const collapsedClass = "nav--collapse";
-          const lsKey = "navCollapsed";
-
-          const nav = document.querySelector(".side-nav");
-
-          // if (localStorage.getItem(lsKey) === "true") {
-          //   nav.classList.add(collapsedClass);
-          // }
-
-          nav.addEventListener("click", () => {
-            nav.classList.toggle(collapsedClass);
-            // localStorage.setItem(lsKey, nav.classList.contains(collapsedClass));
-          })
-      }
-    </script>
   </body>
 </html>

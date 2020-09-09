@@ -1,42 +1,59 @@
-var rule = CSSRulePlugin.getRule(".intro-title span:after");
+$(document).ready(function () {
+  // Open Nav
+  $(".burger-menu").on("click", function (e) {
+    e.preventDefault();
 
-/*
-gsap.from(".rsd-logo", {
-  opacity: 0,
-  duration: 1,
-  y: -50,
-  ease: "Power2.easeInOut",
+    let sideNav = $(".navigation");
+
+    sideNav.addClass("open");
+  });
+
+  // Pin Nav
+  $(".nav-options a").on("click", function (e) {
+    e.preventDefault();
+
+    let pinIt = $(".navigation");
+    let pinAnimation = $(".nav-options a");
+    let navContentPosition = $(".nav-items-wrapper");
+    let closeNav = $(".navigation");
+
+    pinIt.toggleClass("pin-down");
+    pinAnimation.toggleClass("pin-it");
+    navContentPosition.toggleClass("fixed");
+
+    if (pinIt.hasClass() !== "pin-down") {
+      closeNav.removeClass("open");
+    }
+  });
+
+  // --------------------------------------------------------------------------------//
+  // Smooth Scroll
+
+  let scrollLink = $(".scroll");
+
+  scrollLink.click(function (e) {
+    e.preventDefault();
+
+    $("body, html").animate(
+      {
+        scrollTop: $(this.hash).offset().top,
+      },
+      1000
+    );
+  });
+
+  // Active link switching
+
+  $(window).scroll(function () {
+    let scrollbarLocation = $(this).scrollTop();
+
+    scrollLink.each(function () {
+      let sectionOffset = $(this.hash).offset().top;
+
+      if (sectionOffset <= scrollbarLocation) {
+        $(this).parent().addClass("active");
+        $(this).parent().siblings().removeClass("active");
+      }
+    });
+  });
 });
-
-gsap.from(".intro-title", {
-  duration: 1,
-  y: -50,
-  opacity: 0,
-});
-gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 1 });
-
-gsap.from(".intro-image", {
-  duration: 1,
-  x: 100,
-  opacity: 0,
-});
-*/
-
-var tl = gsap.timeline({ defaults: { duration: 1 } });
-
-tl.from(".intro-image", { x: 100, opacity: 0, ease: "Power1.easeInOut" })
-  .to(".rsd-logo", {
-    opacity: 1,
-    y: 50,
-    ease: "Power2.easeInOut",
-  })
-  .to(
-    rule,
-    {
-      duration: 1.5,
-      cssRule: { scaleY: 0 },
-      ease: "Power3.easeInOut",
-      delay: 0.5,
-    },
-    "-=1.5"
-  );
