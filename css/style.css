@@ -188,6 +188,9 @@ body {
 #xpressassessment h1 span {
   color: var(--output-primary);
 }
+.client-logo {
+  margin-top: 2em;
+}
 .client-logo img {
   max-width: 200px;
 }

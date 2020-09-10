@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     $("body, html").animate(
       {
-        scrollTop: $(this.hash).offset().top,
+        scrollTop: $(this.hash).offset().top - -20,
       },
       1000
     );
